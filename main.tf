@@ -20,7 +20,7 @@ provider "aws" {
 resource "random_pet" "suffix" {}
 
 resource "aws_s3_bucket" "test_bucket" {
-  bucket = "tf-test-bucket-${random_pet.suffix.id}"
+  bucket = "qovery-test-bucket-${random_pet.suffix.id}"
 }
 
 output "bucket_name" {
